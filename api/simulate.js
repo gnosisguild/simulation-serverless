@@ -12,7 +12,6 @@ module.exports = async (req, res) => {
   const { body } = req;
 
   try {
-    console.log('process.env.TENDERLY_ACCESS_KEY', process.env.TENDERLY_ACCESS_KEY)
     console.log('body', body)
     const response = await fetch(
       "https://api.tenderly.co/api/v1/account/gnosisguild/project/safesnap/simulate-bundle",
