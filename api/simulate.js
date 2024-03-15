@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
     console.log('process.env.TENDERLY_ACCESS_KEY', process.env.TENDERLY_ACCESS_KEY)
     console.log('body', body)
     const response = await fetch(
-      "https://api.tenderly.co/api/v1/account/juliopavilaa/project/safesnap-plugin/simulate-bundle",
+      "https://api.tenderly.co/api/v1/account/gnosisguild/project/safesnap/simulate-bundle",
       {
         method: "POST",
         headers: {
